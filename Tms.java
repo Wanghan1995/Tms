@@ -68,7 +68,7 @@ public class Tms{
 	private int getIndexByCourse(String course){
 		int num=-1;
 		for (int i=0;i<index ;i++ ){
-			if(teas[i].getCourse()==course){
+			if(teas[i].getCourse().equals(course)){//字符串比较用equals方法
 				num=i;
 				break;
 			}
